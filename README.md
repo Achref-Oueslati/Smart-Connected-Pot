@@ -1,14 +1,10 @@
 # SCOpot: Smart-Connected-Pot
 #### SCOpot: Smart Connected Flower Pot 🌱
-SCOpot is a **smart IoT flower pot** designed to automate plant care using **embedded systems** and AI. One of the key innovations in this project is the use of the **FOMO (Faster Objects, More Objects)** algorithm. This lightweight machine learning model is optimized for **embedded systems**, like the **ESP32CAM**, enabling real-time plant identification without consuming much power or memory.
+SCOpot is a **smart IoT flower pot** designed to automate plant care using **embedded systems** and AI. One of the key innovations in this project is the use of the **FOMO (Faster Objects, More Objects)** algorithm. This lightweight machine learning model is optimized for **embedded systems**, like the **ESP32CAM**, enabling real-time plant identification without consuming much power, memory or any heavy computational resources.
 
 You can read everything about the FOMO algorithm on here : https://docs.edgeimpulse.com/docs/edge-impulse-studio/learning-blocks/object-detection/fomo-object-detection-for-constrained-devices
 
-
-By using **Edge Impulse** to train the model, SCOpot can run object detection efficiently on low-power devices. 
-**Edge Impulse** is a leading development platform for building, training, and deploying machine learning models on embedded devices and edge hardware. It simplifies the process of collecting and processing sensor data, training models, and deploying them on resource-constrained devices like microcontrollers and IoT devices without the need to code.
-
-
+**SCOpot** monitors key environmental factors—soil moisture, temperature, humidity, and light—using sensors such as the **DHT11** (temperature/humidity sensor), **photoresistor** (light sensor), and a **soil moisture sensor**. It automates irrigation using a **water pump** and a **relay system**, ensuring the plant is watered only when needed. The system provides real-time feedback via a **web and mobile dashboard** built with the **Blynk IoT platform**.
 
 Key Features:
 - **AI-powered plant identification**: SCOpot uses the **FOMO algorithm** via **Edge Impulse** and **TensorFlow Lite** to identify plant types using the ESP32CAM. FOMO is specially designed for embedded systems, offering fast and accurate object detection with minimal resource usage.
@@ -19,15 +15,19 @@ Key Features:
 Technologies:
 - **Microcontroller**: ESP32, ESP32CAM
 - **AI & Machine Learning**: FOMO algorithm (Edge Impulse), TensorFlow Lite
+- **Sensors**: DHT11 (temperature/humidity), soil moisture sensor, photoresistor (light sensor)
+- **Actuators**: Water pump, relay
+
 - **IoT Platform**: Blynk for real-time monitoring and notifications
 - **Programming**: C++, Python
 - **Tools**: Arduino IDE, Fritzing, Lucidchart
 
 ### How to Run:
-1. Install the necessary libraries (WiFi.h, Blynk, DHT).
-2. Flash the ESP32 and ESP32CAM using Arduino IDE.
-3. Set up the Blynk dashboard for real-time monitoring and alerts.
-4. Use Edge Impulse to train the FOMO model and deploy it on the ESP32CAM for live object detection.
+1. 1. Assemble all the necessary equipments ( sensors, actuators, wires ...)
+2. Install the necessary libraries (WiFi.h, Blynk, DHT).
+3. Flash the ESP32 and ESP32CAM using Arduino IDE.
+4. Set up the Blynk dashboard for real-time monitoring and alerts.
+5. Use Edge Impulse to train the FOMO model and deploy it on the ESP32CAM for live object detection.
 
 SCOpot shows how the **FOMO algorithm** can bring real-time object detection to resource-limited devices, making smart gardening possible on low-power, low-cost hardware like the ESP32CAM.
 
