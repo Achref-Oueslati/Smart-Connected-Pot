@@ -1,4 +1,4 @@
-# SCOpot: Smart-Connected-Pot
+Feel free to read all the documentation on my project report: [Rapport Finale.pdf](https://github.com/user-attachments/files/17532406/Rapport.Finale.pdf)
 #### SCOpot: Smart Connected Flower Pot 🌱
 SCOpot is a **smart IoT flower pot** designed to automate plant care using **embedded systems** and AI. One of the key innovations in this project is the use of the **FOMO (Faster Objects, More Objects)** algorithm. This lightweight machine learning model is optimized for **embedded systems**, like the **ESP32CAM**, enabling real-time plant identification without consuming much power, memory or any heavy computational resources.
 
@@ -30,6 +30,5 @@ Technologies:
 5. Use Edge Impulse to train the FOMO model and deploy it on the ESP32CAM for live object detection.
 
 SCOpot shows how the **FOMO algorithm** can bring real-time object detection to resource-limited devices, making smart gardening possible on low-power, low-cost hardware like the ESP32CAM.
-
 ---
 Let me know if you'd like further assistance with the process!
